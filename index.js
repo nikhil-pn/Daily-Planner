@@ -4,7 +4,7 @@ const app = express();
 const RedisClient = require("./config/connectRedis");
 const PORT = 3001;
 const sheduleRoutes = require("./routes/scheduleRoutes");
-
+require("./services/scheduler")
 app.use(express.json());
 app.use(logger("dev"));
 
