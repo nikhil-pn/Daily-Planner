@@ -27,3 +27,5 @@ const sendMessage = async () => {
     console.log(error);
   }
 };
+
+module.exports = {sendMessage}
