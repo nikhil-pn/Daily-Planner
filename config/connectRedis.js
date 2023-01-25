@@ -6,5 +6,4 @@ const RedisClient = Redis.createClient({
   legacyMode: true,
 });
 
-RedisClient.connect();
 module.exports = RedisClient;

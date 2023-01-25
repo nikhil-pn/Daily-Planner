@@ -1,7 +1,5 @@
-const router = require("express").Router()
-const {createSchedule} = require("../controllers/scheduleController")
+const Router = require("express").Router();
+const { createSchedule } = require("../controllers/scheduleControllers");
 
-router.post("/")
-
-
-module.exports = router
+Router.route("/").post(createSchedule);
+module.exports = Router;

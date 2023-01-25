@@ -3,9 +3,12 @@ const logger = require("morgan");
 const app = express();
 const RedisClient = require("./config/connectRedis");
 const PORT = 3001;
+const sheduleRoutes = require("./routes/scheduleRoutes");
 
 app.use(express.json());
 app.use(logger("dev"));
+
+app.use("/api/v1/schedule",sheduleRoutes);
 
 app.listen(PORT, () => {
   console.log("Server is runnig");
