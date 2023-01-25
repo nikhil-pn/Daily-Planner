@@ -28,4 +28,4 @@ const sendMessage = async () => {
   }
 };
 
-module.exports = {sendMessage}
+module.exports = { sendMessage };

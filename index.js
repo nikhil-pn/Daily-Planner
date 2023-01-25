@@ -7,6 +7,7 @@ const sheduleRoutes = require("./routes/scheduleRoutes");
 require("./services/scheduler")
 app.use(express.json());
 app.use(logger("dev"));
+app.use(express.static("public"))
 
 app.use("/api/v1/schedule",sheduleRoutes);
 
